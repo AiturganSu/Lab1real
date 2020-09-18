@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <title></title>
+</head>
+<style>
+    h1 {
+        font-size: 55px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:white;
+        backface-visibility: hidden;
+    }
+
+    div.background {
+        background: url(klematis.jpg) repeat;
+        border: 2px solid black;
+    }
+
+    div.transbox {
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+    }
+
+        div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+            font-size: 25px;
+        }
+    body {
+        background-image: url('food.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    h1{
+        font-size:50px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+        
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+</style>
+<body>
+    <ul id="topnav">
+        <li><a href="MainPage.html">Home</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="Calendar1.html">Order</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#BMR">BMR</a></li>
+        <li><a href="membership1.html">SignUp</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="Map.html">Map</a></li>
+
+    </ul>
+    <h1>Welcome to Food Paradise</h1>
+    <div id="openweathermap-widget-18"></div>
+    <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = []; window.myWidgetParam.push({ id: 18, cityid: '1528675', appid: '729b62da0e3c1f2652b248e23b1cb7d8', units: 'metric', containerid: 'openweathermap-widget-18', }); (function () { var script = document.createElement('script'); script.async = true; script.charset = "utf-8"; script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s); })();</script>
+
+    <div class="background">
+        <div class="transbox">
+            <p>
+                MADE WITH LOVE
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="f1.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="f2.jfif" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="f4.jpg" alt="Mountains" style="width:100%">
+        </div>
+    </div>
+    <h1>VISIT & EAT & ENJOY</h1>
+    <div class="background">
+        <div class="transbox">
+            <p>
+                MILLION TASTES IN ONE DISH
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="s1.jfif" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="s2.jfif" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="s3ss.jpg" alt="Mountains" style="width:100%">
+        </div>
+    </div>
+    <script src="Schedule.js"></script>
+    <script src="NavBar.js"></script>
+</body>
+</html>
